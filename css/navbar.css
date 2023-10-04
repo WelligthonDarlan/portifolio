@@ -1,0 +1,104 @@
+#menu-btn{
+    position: fixed;
+    top: 20px; right: 30px;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    font-size: 40px;
+    cursor: pointer;
+    background: #ff8c2a;
+    color: #d7f9ff;
+    text-align: center;
+    z-index: 1000;
+}
+#menu-btn.fa-times{
+    transform: rotate(180deg);
+    background: #2BFDBE;
+    color: #000;
+}
+.navbar{
+    text-transform: uppercase;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #01080e,  #031525, #01080ef5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 50px;
+    clip-path: circle(0% at 95.3% 8.5%);
+}
+.navbar.active{
+    clip-path: circle(140% at 95.3% 8.5%);
+
+}
+.navbar.desactive{
+    clip-path: circle(0% at 95.3% 8.5%);
+}
+
+.navbar a{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;
+    padding-bottom: 30px;
+    color: #2bdefd;
+}
+.navbar a:hover{
+    color: #7b71ff;
+}
+.navbar a::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    color: #2bdefd;
+    pointer-events: none;
+    font-weight: bolder;
+    letter-spacing: .4em;
+    opacity: 0;
+    z-index: -1;
+}
+.navbar a:hover::before{
+    letter-spacing: 0em;
+    opacity: .1;
+    transition: .3s ease-out;
+}
+@media only screen and (max-width: 410px){
+    #menu-btn{
+        height: 40px;
+        width: 40px;
+        font-size: 22px;
+        position: fixed;
+        top: 3px; right: 3px;
+        line-height: 40px;
+    }
+}
+@media only screen and (max-width: 320px){
+    #menu-btn{
+        height: 40px;
+        width: 40px;
+        font-size: 22px;
+        position: fixed;
+        top: 6px; right: 6px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 800px){
+    .navbar a:hover::before{
+        font-size: 100px;
+    }
+  }
+@media screen and (max-width: 540px){
+    .navbar a:hover::before{
+        font-size: 80px;
+    }
+  }
+@media screen and (max-width: 440px){
+    .navbar a:hover::before{
+        font-size: 60px;
+    }
+  }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <script src="script.js" defer></script>
+    <script src="./contact.js" defer></script>
+
+    <title>Person Portfolio Website</title>
+</head>
+<body>
+    <!-- ------------------NAVBAR--\/------------------ -->
+    <header>
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar" id="nav-bar">
+        <a href="#header" data-text="início" onclick="remove()">início</a>
+        <a href="#sobre" data-text="sobre" onclick="remove()">sobre</a>
+        <a href="#projects" data-text="projetos" onclick="remove()">projetos</a>
+        <a href="#contact" data-text="contato" onclick="remove()">contato</a>
+    </nav>
+        <div id="header">
+            <img src="./images/logo.png" class="logo">
+
+            <div class="headerText">
+
+                <h1>Oi, sou <span>Welligthon</span><br> Paluchowski Desenvolvedor Full Stack</h1>
+
+                <a href="./images/curriculo.pdf" download id="download">CURRÍCULO <img src="./images/file-arrow-down-solid.svg" alt="imgDownload">
+                </a>
+            </div>
+        </div>
+        
+    </header>
+    <!-- ------------------NAVBAR--/\------------------ -->
+    <!-- ------------------ABOUT---\/------------------ -->
+    <main>
+        <div id="about">
+            <div class="containerAbout">
+                <div class="row" id="sobre">
+                    <div class="about-col-1" id="sobre">
+                        <img src="./images/user.png" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Sobre mim</h1>
+                        <p id="description">&nbsp; Estive muito conectado com a tecnologia desde a infância, com desenvolvimento e configuração de jogos e mapas de jogos em 3D, software de edição de vídeos e fotos, redes sociais, desenvolvimento de desenhos 3D e 2D...
+                        <br>
+                        &nbsp; Descobri minha verdadeira vocação na programação a um ano, comecei com um curso de desenvolvedor Full Stack. Hoje estou totalmente dedicado a me tornar um excelente programador e, para isso, busco estudar novas tecnologias e reforçar meus conhecimentos através de cursos e muita prática.
+                        </p>
+                        <div class="tab-container">
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="openTab('skills')">Habilidades</p>
+                                <p class="tab-links" onclick="openTab('experience')">Experiência</p>
+                                <p class="tab-links" onclick="openTab('education')">Educação</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>HTML / CSS / Javascript</span><br>&nbsp;Tenho muita pratica no desenvolvimento de páginas Web</li>
+                                    <li><span>React</span><br>&nbsp;Tenho conhecimento basico de React </li>
+                                    <li><span>Animação 2D e 3D</span><br>&nbsp;Desenvolvi habilidades com diversos software de animação</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2018 - 2019</span><br>&nbsp;Criei um projeto de animação no youtube, onde desenvolvi muitas habilidades com edição de video, animação 2D, tratamento de audio e marketing (Esse projeto foi muito elogiado pela comunidade, mas não tive muito retorno monetário na época)</li>
+                                    <li><span>2020 - 2023</span><br>&nbsp;Trabalhei na administração e gerenciamento de estoque na TokStok, onde aprendi muito como funciona a parte sistematica de um estoque fisico.</li>
+                                    <li><span>2023</span><br>&nbsp;Atualmente estou desenvolvendo projetos para amplificar minhas habilidades em Javascript</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2022 - 2023</span><br>Iniciei o curso: <br>Análise e Desenvolvimento de Sistemas - Estácio</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------ABOUT-----/\------------------ -->
+        <!-- ------------------PROJECTS--\/------------------ -->
+            <div id="projects">
+                <h1 class="projectsTitle">MEUS PROJETOS</h1>
+                <div class="projectsList">
+                    <div>
+                        <div class="divBorder">
+                            <div>
+                                <h2 id="titlePurple">EM BREVE</h2>
+                                <img src="./images/projectPurple.png" alt="project.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="divBorder">
+                            <div>
+                                <h2 id="titleRed">EM BREVE</h2>
+                                <img src="./images/projectRed.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="divBorder">
+                            <div>
+                                <h2 id="titlePink">EM BREVE</h2>
+                                <img src="./images/projectPink.png" alt="project.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------PROJECTS--/\------------------ -->
+            <!-- ------------------CONTACT--\/------------------ -->
+            <div id="contact">
+                <div class="containerContact">
+                    <div class="contactLeft">
+                        <h1 class="titleContactLeft">Onde me encontrar</h1>
+                        <p><img src="./images/square-phone-solid.png" alt="phone" class="inconContact">+55 48 9 8824-0117</p>
+                        <p><img src="./images/paper-plane-solid.png" alt="sendEmail" class="inconContact">welldarlan.pw@gmail.com</p>
+                        <div class="iconSocialMedia">
+                            <a href="https://www.linkedin.com/in/welligthon-paluchowski/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" class="inconContact"></a>
+                            <a href="https://www.instagram.com/well_ligth_on/" target="_blank"><img src="./images/instagram.png" alt="instagram" class="inconContact"></a>
+                        </div>
+                    </div>
+                    <div class="contactRight">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Seu nome" required>
+                            <input type="email" name="Email" placeholder="Seu E-mail">
+                            <textarea name="Message" rows="6" placeholder="Sua menssagem"></textarea>
+                            <button type="submit">ENVIAR</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © Welligthon Darlan.</p>
+                </div>
+            </div>
+            <!-- ------------------CONTACT--/\------------------ -->
+    </main>
+</body>
+</html>
