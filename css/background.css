@@ -40,7 +40,7 @@ body{
     flex-direction: column;
     padding: 3rem;
     gap: 4rem;
-    font-size: 25px;
+    font-size: 30px;
 }
 .headerText span{
     color: #2bdefd; 
@@ -50,52 +50,77 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 0.5rem;
-    padding: 1rem 0.5rem;
+    gap: 9px;
+    padding: 23px 30px;
     background: linear-gradient(to bottom,#2BFDBE,#2BFDBE );
     color: #010816;
-    clip-path: polygon(0 0,100% 0,100% calc(100% - 20px),calc(100% - 20px) 100%,0 100%);
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 50%, 85% 100%);
     text-decoration: none;
     font-weight: 900;
-    font-size: 90%;
-    width: 15%;
-    height: auto;
+    font-size: 22px;
+    width: 300px;
     transition: 0.5s;
 }
 #download:hover{
     background: linear-gradient(to bottom,#2BFDBE,#167457 );
 }
 #download img{
-    width: 9%;
+    width: 22px;
 }
 /* ------------------BACKGROUND--/\------------------ */
 /* ------------------BACKGROUND--\/--MEDIA QUERY---------------- */
 @media only screen and (max-width: 1800px){
+    
     .headerText h1{
         width: 50%;
     }
+    #download{
+        padding: 18px 30px;
+        width: 280px;
+        font-size: 20px;
+    }
+    #download img{
+        width: 20px;
+    }
+}
+@media only screen and (max-width: 1600px){
+    
+    .headerText h1{
+        font-size: 50px;
+    }
+   
 }
 @media only screen and (max-width: 1300px){
     #header{
         background-image: url(../images/background1.png);
     }
+    .headerText {
+        justify-content: space-between;
+        padding: 3rem 0rem 8rem 3rem;
+    }
+    .headerText h1{
+        width: 70%;
+    }
     #download{
-        width: 20% !important;
+        width: 200px;
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 1000px){
     .headerText h1{
         font-size: 2.5rem;
     }
-    #download{
-        width: 22% !important;
+    #download img{
+        width: 16px;
     }
 }
-@media only screen and (max-width: 930px){
+@media only screen and (max-width: 840px){
+   
     #download{
-        font-size: 70% !important;
+        padding: 14px 30px;
     }
 }
+
 @media only screen and (max-width: 760px){
     #header{
         background-image: url(../images/backgroundPhone1.png);
@@ -107,82 +132,47 @@ body{
         align-items: start;
         justify-content: space-around;
         width: 100%;
+        padding: 1rem 2rem 7rem 3rem;
     }
     .headerText h1{
         width: 100%;
     }
-    #download{
-        font-size: 60% !important;
-    }
-    #download img{
-        width: 13%;
-    }
 }
-@media only screen and (max-width: 670px){
-    #download{
-        font-size: 45% !important;
-    }
-}
-@media only screen and (max-width: 570px){
-    #download{
-        padding: 1rem 2.5rem !important; 
-        width: 30% !important;
-    }
-    #download img{
-        width: 23%;
-    }
-}
-@media only screen and (max-width: 510px){
-    #download img{
-        width: 38%;
-    }
-    .headerText{
-        padding: 1rem;
-    }
 
-}
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 569px){
     .logo{
-        width: 40%;
+        width: 200px;
+    }
+    .headerText {
+            padding: 3rem 0rem 8rem 2rem;
     }
     .headerText h1{
         font-size: 100%;
     }
+}
+@media only screen and (max-width: 560px){
+
+    .headerText {
+            padding: 3rem 0rem 1rem 2rem;
+    }
+  
+}
+@media only screen and (max-width: 400px){
+
+    .headerText {
+            padding: 2rem 0rem 1rem 1rem;
+    }
     #download{
-        padding: 0.8rem 3rem !important; 
-        width: 40% !important;
+        width: 160px;
     }
-    #download img{
-        width: 35%;
-    }
+}
+@media only screen and (max-width: 381px){
 
-}
-@media only screen and (max-width: 435px){
-    #download img{
-        width: 55%;
+    .headerText h1{
+        font-size: 25px;
     }
 }
-@media only screen and (max-width: 405px){
-    #download img{
-        width: 55%;
-    }
-}
-@media only screen and (max-width: 395px){
-    #download img{
-        width: 65%;
-    }
-}
-@media only screen and (max-width: 388px){
-    #download img{
-        width: 85%;
-    }
 
-}
-@media only screen and (max-width: 375px){
-    #download img{
-        display: none;
-    }
-}
 /* ------------------BACKGROUND--/\--MEDIA QUERY---------------- */
 
 
