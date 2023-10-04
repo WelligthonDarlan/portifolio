@@ -11,6 +11,9 @@
     color: #d7f9ff;
     text-align: center;
     z-index: 1000;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 #menu-btn.fa-times{
     transform: rotate(180deg);

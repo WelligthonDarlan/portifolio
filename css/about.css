@@ -21,6 +21,9 @@
     align-items: center;
     height: 100%;
     gap: 5%;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 /* --------------COLUNA--1--\/------------------ */
 .about-col-1{

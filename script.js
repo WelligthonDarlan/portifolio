@@ -73,3 +73,62 @@ function remove(){
     document.querySelector('#menu-btn').classList.remove('fa-times')
     document.querySelector('.navbar').classList.remove('active')
 }
+
+// ------------------EFEITO FADE------------------
+
+class Fade {
+    constructor(items, delay) {
+        this.items = items;
+        this.delay = delay || 70;
+    }
+
+    fadeIn(el) {
+        let opacity = 0;
+        const timer = setInterval(() => {
+            if (opacity < 1) {
+                opacity += 0.1;
+                el.style.opacity = opacity;
+            } else {
+                clearInterval(timer);
+            }
+        }, this.delay);
+    }
+
+    checkFades() {
+        this.items.forEach((el) => {
+            const wHeight = window.innerHeight * 0.75;
+            const elementTop = el.getBoundingClientRect().top;
+            if (elementTop < wHeight) {
+                if (el.style.opacity === "" || el.style.opacity === "0") {
+                    this.fadeIn(el);
+                }
+            }
+        });
+    }
+
+    init() {
+        if (this.items.length) {
+            this.items.forEach((el) => {
+                el.style.opacity = 0;
+            });
+            this.checkFades();
+        }
+        return this;
+    }
+}
+
+const fadeInScroll = document.querySelectorAll(".fadeInScroll");
+
+if (fadeInScroll.length) {
+    const fade = new Fade(fadeInScroll);
+    fade.init();
+
+    window.addEventListener("scroll", () => {
+        let timer;
+        if (timer) clearTimeout(timer);
+        timer = setTimeout(() => {
+            fade.checkFades();
+            timer = null;
+        }, 200);
+    });
+}
