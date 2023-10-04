@@ -1,0 +1,181 @@
+/*-------------------PROJETOS--\/--------------- */
+
+#projects{
+    /* border: 1px solid rgb(0, 255, 47); */
+    width: 100%;
+    height: 900px;
+    background: #01080e;
+    clip-path: polygon(0 100%, 0 0, 49% 0, 51% 5%, 100% 5%, 100% 95%, 51% 95%, 49% 100%);
+}
+.projectsList{
+    width: 100%;
+    height: 100%;
+    padding: 9rem;
+    display: grid;
+    grid-template-areas: 'a a a';
+    gap: 3rem;
+    /* border: 1px solid rgb(229, 255, 0); */
+}
+.projectsList div{
+    width: 100%;
+    height: 80%;
+}
+
+/*------------------PROJETOS--/\------------------ */
+
+/* ----------------------CARD PROJETOS--\/-------------------- */
+
+.projectsTitle{
+    padding: 2rem 0rem 0rem 20rem ;
+}
+
+.divBorder{
+    width: 100%;
+    height: 100%;
+    padding: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #012640;
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 75% 100%, 0% 100%);
+}
+
+.divBorder:hover{
+    background: #2bdefd;
+}
+
+#titlePurple{
+    color: #7b71ff;
+    font-size: 2rem;
+}
+
+#titleRed{
+    color: #f16165;
+    font-size: 2rem;
+}
+
+#titlePink{
+    color: #dc6ebe;
+    font-size: 2rem;
+}
+
+.divBorder div{
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #021017;
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 75% 100%, 0% 100%);
+}
+
+.divBorder div img{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    height: auto;
+    animation: mymove 3s infinite ease;
+    filter: drop-shadow(-1px 1px 30px #2bddfd5b);
+}
+
+@keyframes mymove {
+    0%   {bottom: -10px;}
+    50%  {bottom: 20px;}
+    100%   {bottom: -10px;}
+  }
+
+  @media screen and (max-width: 1330px){
+    #projects{
+    padding: 0;
+    }
+    .projectsList{
+        gap: 3rem;
+    }
+    .projectsTitle{
+        padding: 1rem 2rem;
+    }
+  }
+
+  @media screen and (max-width: 980px){
+    #projects{
+        height: 200vh;
+        clip-path: polygon(0 100%, 0 0, 49% 0, 51% 2%, 100% 2%, 100% 98%, 51% 98%, 49% 100%);
+    }
+    .projectsList{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .projectsList div{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .divBorder div{
+        width: 100%;
+        height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 700px){
+    .projectsList div{
+        width: 100%;
+    }
+   
+  }
+
+  @media screen and (max-width: 660px){
+    .projectsTitle{
+        font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 520px){
+    
+    .projectsTitle{
+        font-size: 1.2rem;
+    }
+    #projects{
+        width: 100%;
+        height: 1200px;
+        padding-bottom: 5rem;
+    }
+    .projectsList{
+        padding: 3rem;
+    }
+    .projectsList div{
+        height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 420px){
+    
+    .projectsTitle{
+        font-size: 1rem;
+    }
+    #projects{
+        width: 100%;
+        height: 900px;
+    }
+    .projectsList{
+        padding: 3rem;
+    }
+    .projectsList div{
+        height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 360px){
+    
+    .projectsTitle{
+        font-size: 0.7rem;
+    }
+  }
+/* ----------------------CARD PROJETOS--/\-------------------- */

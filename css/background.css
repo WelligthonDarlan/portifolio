@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+/* ------------------BACKGROUND--\/------------------ */
+
+body{
+    background: #232323;
+    color: #d7f9ff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(100% 0, 100% 95%, 49% 95%, 46% 100%, 0 100%, 0% 0%);
+}
+
+.logo{
+    padding-left: 2rem;
+}
+
+.container{
+    height: 100%;
+}
+
+.headerText{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 4rem;
+    font-size: 25px;
+}
+.headerText span{
+    color: #2bdefd; 
+}
+#download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+    background: linear-gradient(to bottom,#2BFDBE,#2BFDBE );
+    color: #010816;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 20px),calc(100% - 20px) 100%,0 100%);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 90%;
+    width: 15%;
+    height: auto;
+    transition: 0.5s;
+}
+#download:hover{
+    background: linear-gradient(to bottom,#2BFDBE,#167457 );
+}
+#download img{
+    width: 9%;
+}
+/* ------------------BACKGROUND--/\------------------ */
+/* ------------------BACKGROUND--\/--MEDIA QUERY---------------- */
+@media only screen and (max-width: 1800px){
+    .headerText h1{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 1300px){
+    #header{
+        background-image: url(../images/background1.png);
+    }
+    #download{
+        width: 20% !important;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .headerText h1{
+        font-size: 2.5rem;
+    }
+    #download{
+        width: 22% !important;
+    }
+}
+@media only screen and (max-width: 930px){
+    #download{
+        font-size: 70% !important;
+    }
+}
+@media only screen and (max-width: 760px){
+    #header{
+        background-image: url(../images/backgroundPhone1.png);
+        clip-path: polygon(100% 0, 100% 98%, 49% 98%, 46% 100%, 0 100%, 0% 0%);
+    }
+    .headerText{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .headerText h1{
+        width: 100%;
+    }
+    #download{
+        font-size: 60% !important;
+    }
+    #download img{
+        width: 13%;
+    }
+}
+@media only screen and (max-width: 670px){
+    #download{
+        font-size: 45% !important;
+    }
+}
+@media only screen and (max-width: 570px){
+    #download{
+        padding: 1rem 2.5rem !important; 
+        width: 30% !important;
+    }
+    #download img{
+        width: 23%;
+    }
+}
+@media only screen and (max-width: 510px){
+    #download img{
+        width: 38%;
+    }
+    .headerText{
+        padding: 1rem;
+    }
+
+}
+@media only screen and (max-width: 450px){
+    .logo{
+        width: 40%;
+    }
+    .headerText h1{
+        font-size: 100%;
+    }
+    #download{
+        padding: 0.8rem 3rem !important; 
+        width: 40% !important;
+    }
+    #download img{
+        width: 35%;
+    }
+
+}
+@media only screen and (max-width: 435px){
+    #download img{
+        width: 55%;
+    }
+}
+@media only screen and (max-width: 405px){
+    #download img{
+        width: 55%;
+    }
+}
+@media only screen and (max-width: 395px){
+    #download img{
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 388px){
+    #download img{
+        width: 85%;
+    }
+
+}
+@media only screen and (max-width: 375px){
+    #download img{
+        display: none;
+    }
+}
+/* ------------------BACKGROUND--/\--MEDIA QUERY---------------- */
+
+
+
+
