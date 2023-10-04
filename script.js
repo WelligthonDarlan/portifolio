@@ -79,7 +79,7 @@ function remove(){
 class Fade {
     constructor(items, delay) {
         this.items = items;
-        this.delay = delay || 70;
+        this.delay = delay || 100;
     }
 
     fadeIn(el) {
