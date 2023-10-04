@@ -3,36 +3,41 @@
 #projects{
     /* border: 1px solid rgb(0, 255, 47); */
     width: 100%;
-    height: 900px;
+    height: 100%;
+    padding: 200px 55px 200px 55px;
     background: #01080e;
     clip-path: polygon(0 100%, 0 0, 49% 0, 51% 5%, 100% 5%, 100% 95%, 51% 95%, 49% 100%);
+    
+}
+.projectsTitle{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 80px;
 }
 .projectsList{
     width: 100%;
     height: 100%;
-    padding: 9rem;
-    display: grid;
-    grid-template-areas: 'a a a';
-    gap: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 80px;
+    flex-wrap: wrap;
+    
     /* border: 1px solid rgb(229, 255, 0); */
 }
 .projectsList div{
-    width: 100%;
-    height: 80%;
+    width: 500px;
+    height: 600px;
 }
 
 /*------------------PROJETOS--/\------------------ */
 
 /* ----------------------CARD PROJETOS--\/-------------------- */
 
-.projectsTitle{
-    padding: 2rem 0rem 0rem 20rem ;
-}
-
 .divBorder{
-    width: 100%;
-    height: 100%;
-    padding: 0.1rem;
+    width: 500px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,36 +45,40 @@
     background: #012640;
     clip-path: polygon(0% 0%, 100% 0, 100% 75%, 75% 100%, 0% 100%);
 }
-
 .divBorder:hover{
     background: #2bdefd;
 }
-
-#titlePurple{
-    color: #7b71ff;
-    font-size: 2rem;
-}
-
-#titleRed{
-    color: #f16165;
-    font-size: 2rem;
-}
-
-#titlePink{
-    color: #dc6ebe;
-    font-size: 2rem;
-}
-
 .divBorder div{
-    gap: 2rem;
-    width: 100%;
-    height: 100%;
+    width: 496px;
+    height: 596px;
+    padding: 0px 40px 0px 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     background: #021017;
     clip-path: polygon(0% 0%, 100% 0, 100% 75%, 75% 100%, 0% 100%);
+}
+
+#titlePurple{
+    font-family: 'Chakra Petch', sans-serif;
+    color: #7b71ff;
+    font-size: 40px;
+    text-align: center;
+}
+
+#titleRed{
+    font-family: 'Chakra Petch', sans-serif;
+    color: #f16165;
+    font-size: 30px;
+    text-align: center;
+}
+
+#titlePink{
+    font-family: 'Chakra Petch', sans-serif;
+    color: #dc6ebe;
+    font-size: 40px;
+    text-align: center;
 }
 
 .divBorder div img{
@@ -79,6 +88,19 @@
     height: auto;
     animation: mymove 3s infinite ease;
     filter: drop-shadow(-1px 1px 30px #2bddfd5b);
+    border-radius: 5px;
+}
+.divBorder div p{
+    font-size: 26px;
+    text-align: center;
+        
+}
+.linkProject{
+    color: #ffffff76;
+    font-size: 25px;
+}
+.linkProject:hover{
+    color: #2bdefd;
 }
 
 @keyframes mymove {
@@ -87,95 +109,84 @@
     100%   {bottom: -10px;}
   }
 
-  @media screen and (max-width: 1330px){
+  @media screen and (max-width: 1769px){
     #projects{
-    padding: 0;
-    }
-    .projectsList{
-        gap: 3rem;
-    }
-    .projectsTitle{
-        padding: 1rem 2rem;
+        clip-path: polygon(0 100%, 0 0, 49% 0, 51% 3%, 100% 3%, 100% 97%, 51% 97%, 49% 100%);
+        
     }
   }
-
-  @media screen and (max-width: 980px){
+  @media screen and (max-width: 1189px){
     #projects{
-        height: 200vh;
-        clip-path: polygon(0 100%, 0 0, 49% 0, 51% 2%, 100% 2%, 100% 98%, 51% 98%, 49% 100%);
+        clip-path: polygon(0 100%, 0 0, 49% 0, 51% 1%, 100% 1%, 100% 99%, 51% 99%, 49% 100%);
+        
     }
-    .projectsList{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  }
+  @media screen and (max-width: 517px){
     .projectsList div{
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 400px;
+        height: 500px;
+    }
+    .divBorder{
+        width: 400px;
+        height: 500px;
     }
     .divBorder div{
-        width: 100%;
-        height: 100%;
+        width: 396px;
+        height: 496px;
+    }
+    #titlePurple{
+        font-size: 30px;
+    }
+    
+    #titleRed{
+        font-size: 20px;
+    }
+    
+    #titlePink{
+        font-size: 30px;
+    }
+    .divBorder div p{
+        font-size: 19px;
+            
     }
   }
-
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 425px){
+    .projectsTitle{
+        font-size: 50px;
+    }
     .projectsList div{
         width: 100%;
+        height: auto;
     }
-   
-  }
-
-  @media screen and (max-width: 660px){
-    .projectsTitle{
-        font-size: 1.5rem;
-    }
-  }
-
-  @media screen and (max-width: 520px){
-    
-    .projectsTitle{
-        font-size: 1.2rem;
-    }
-    #projects{
+    .divBorder{
         width: 100%;
-        height: 1200px;
-        padding-bottom: 5rem;
+        height: 800px;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 80% 100%, 0% 100%);
     }
-    .projectsList{
-        padding: 3rem;
-    }
-    .projectsList div{
-        height: 100%;
-    }
-  }
-
-  @media screen and (max-width: 420px){
-    
-    .projectsTitle{
-        font-size: 1rem;
-    }
-    #projects{
+  
+    .divBorder div{
         width: 100%;
-        height: 900px;
+        height: 500px;
+        clip-path: polygon(1% 0.5%, 99% 0.5%, 99% 87.5%, 79% 99.5%, 1% 99.5%);
     }
-    .projectsList{
-        padding: 3rem;
+    #titlePurple{
+        font-size: 20px;
     }
-    .projectsList div{
-        height: 100%;
-    }
-  }
-
-  @media screen and (max-width: 360px){
     
-    .projectsTitle{
-        font-size: 0.7rem;
+    #titleRed{
+        font-size: 17px;
+    }
+    
+    #titlePink{
+        font-size: 30px;
+    }
+    .divBorder div p{
+        font-size: 19px;
+            
+    }
+    .linkProject{
+        color: #ffffff76;
+        font-size: 20px;
     }
   }
 /* ----------------------CARD PROJETOS--/\-------------------- */
