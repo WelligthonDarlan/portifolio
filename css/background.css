@@ -40,10 +40,11 @@ body {
 
 #header{
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     background-image: url(../images/background.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     clip-path: polygon(100% 0, 100% 95%, 49% 95%, 46% 100%, 0 100%, 0% 0%);
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
@@ -78,18 +79,9 @@ body {
     animation: animate 2s linear forwards;
 
 }
-.text{
-    position: absolute;
-    top: 40px;
-    height: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 0 0 5px #fff,
-    0 0 15px #fff,
-    0 0 25px #fff;
-    transform-origin: bottom;
-    animation: animate 2s linear forwards;
+.iconSocialMediaHeader a img{
+    width: 40px;
+    margin: 10px;
 }
 @keyframes animate {
     0%{
@@ -102,6 +94,7 @@ body {
         transform: translateY(290) scale(0);
     }
 }
+
 #download{
     display: flex;
     justify-content: center;

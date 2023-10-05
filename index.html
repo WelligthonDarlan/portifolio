@@ -35,14 +35,22 @@
         <a href="#contact" data-text="contato" onclick="remove()">contato</a>
     </nav>
         <div id="header">
+            
             <img src="./images/logo.png" class="logo">
 
             <div class="headerText">
 
                 <h1>Oi, sou <span>Welligthon</span><br> Paluchowski Desenvolvedor Full Stack</h1>
 
-                <a href="./images/curriculo.pdf" download id="download">CURRÍCULO <img src="./images/file-arrow-down-solid.svg" alt="imgDownload">
-                </a>
+                <div class="iconSocialMediaHeader">
+
+                    <a href="https://www.linkedin.com/in/welligthon-paluchowski/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" class="inconContact"></a>
+
+                    <a href="https://www.instagram.com/well_ligth_on/" target="_blank"><img src="./images/instagram.png" alt="instagram" class="inconContact"></a>
+
+                    <a href="https://github.com/WelligthonDarlan" target="_blank"><img src="./images/square-github.png" alt="square-github.png"  class="inconContact"></a>
+
+                </div>
 
             </div>
         </div>
@@ -97,14 +105,14 @@
         <!-- ------------------PROJECTS--\/------------------ -->
             <div id="projects" class="fadeInScroll">
                 <h1 class="projectsTitle">MEUS PROJETOS</h1>
-                <div class="projectsList">
+                <div class="projectsList" id="projectList" style="height: 50vh;">
                     <div>
                         <div class="divBorder">
                             <div>
                                 <h2 id="titlePurple">CALCULADORA JS</h2>
                                 <img src="./images/calculadora.png" alt="project.png">
                                 <p>Calculadora com função de alternar tema e copiar resultado do calculo para área de transferência.</p>
-                                <a href="https://welligthondarlan.github.io/calculadoraJS/" class="linkProject">Link Projeto</a>
+                                <a href="https://welligthondarlan.github.io/calculadoraJS/" class="linkProject" target="_blank">Link Projeto</a>
                             </div>
                         </div>
                     </div>
@@ -114,7 +122,7 @@
                                 <h2 id="titleRed">AGENDA SALÃO DE BELEZA</h2>
                                 <img src="./images/ASB.png" alt="project.png">
                                 <p>Agenda para salão de beleza, com login, banco de dados, gerenciamento de colaboradores, gerenciamento de acesso e funções básicas de agendamento.</p>
-                                <a href="https://welligthondarlan.github.io/ASB/" class="linkProject">Link Projeto</a>
+                                <a href="https://welligthondarlan.github.io/ASB/" class="linkProject" target="_blank">Link Projeto</a>
                             </div>
                         </div>
                     </div>
@@ -124,11 +132,44 @@
                                 <h2 id="titlePink">EM BREVE</h2>
                                 <img src="./images/projectPink.png" alt="project.png">
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique aut rem, dolor id ipsa ad ullam asperiores distinctio quas, numquam ut culpa aperiam dolore sit quam sunt esse? Assumenda, modi!</p>
-                                <a href="#" class="linkProject">Link Projeto</a>
+                                <a href="#" class="linkProject" target="_blank">Link Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="divBorder">
+                            <div>
+                                <h2 id="titlePink">EM BREVE</h2>
+                                <img src="./images/projectPink.png" alt="project.png">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique aut rem, dolor id ipsa ad ullam asperiores distinctio quas, numquam ut culpa aperiam dolore sit quam sunt esse? Assumenda, modi!</p>
+                                <a href="#" class="linkProject" target="_blank">Link Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="divBorder">
+                            <div>
+                                <h2 id="titlePink">EM BREVE</h2>
+                                <img src="./images/projectPink.png" alt="project.png">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique aut rem, dolor id ipsa ad ullam asperiores distinctio quas, numquam ut culpa aperiam dolore sit quam sunt esse? Assumenda, modi!</p>
+                                <a href="#" class="linkProject" target="_blank">Link Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="divBorder">
+                            <div>
+                                <h2 id="titlePink">EM BREVE</h2>
+                                <img src="./images/projectPink.png" alt="project.png">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique aut rem, dolor id ipsa ad ullam asperiores distinctio quas, numquam ut culpa aperiam dolore sit quam sunt esse? Assumenda, modi!</p>
+                                <a href="#" class="linkProject" target="_blank">Link Projeto</a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="conteinerVerMais">
+                <button onclick="verMais()" id="btnVerMais">VER MAIS...</button>
             </div>
             <!-- ------------------PROJECTS--/\------------------ -->
             <!-- ------------------CONTACT--\/------------------ -->
@@ -142,6 +183,9 @@
                             <a href="https://www.linkedin.com/in/welligthon-paluchowski/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" class="inconContact"></a>
                             <a href="https://www.instagram.com/well_ligth_on/" target="_blank"><img src="./images/instagram.png" alt="instagram" class="inconContact"></a>
                             <a href="https://github.com/WelligthonDarlan" target="_blank"><img src="./images/square-github.png" alt="square-github.png"  class="inconContact"></a>
+
+                            <a href="./images/curriculo.pdf" download id="download">CURRÍCULO <img src="./images/file-arrow-down-solid.svg" alt="imgDownload">
+                            </a>
                         </div>
                     </div>
                     <div class="contactRight">

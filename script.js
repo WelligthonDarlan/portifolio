@@ -132,3 +132,32 @@ if (fadeInScroll.length) {
         }, 200);
     });
 }
+
+// ------------------VER MAIS------------------
+
+const projectsList = document.getElementById("projectList")
+const btnVerMais = document.getElementById("btnVerMais")
+
+function verMais() {
+    if (projectsList.style.height === "50vh"){
+
+        projectsList.style.height = "100%"
+        btnVerMais.innerText = "VER MENOS"
+    }else {
+        projectsList.style.height = "50vh"
+        btnVerMais.innerText = "VER MAIS..."
+    }
+}
+// const project = document.getElementById("projects")
+// const project = document.getElementById("projects")
+// const btnVerMais = document.getElementById("btnVerMais")
+
+//     function verMais() {
+//         if (project.style.height < "1300px"){
+//         project.style.height = "3000px"
+//         btnVerMais.innerText = "VER MENOS"
+//     }else {
+//         project.style.height = "1200px"
+//         btnVerMais.innerText = "VER MAIS"
+//     }
+// }
